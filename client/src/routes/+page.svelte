@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    let title = "Svelte Todo";
+</script>
+
+<h1 class="text-3xl font-bold">{title}</h1>
+<button class="border border-stone-500">
+    click me
+</button>

@@ -3,6 +3,7 @@ const http = require("http");
 const express = require("express");
 const mongoose = require("mongoose"); // mongoose for mongodb
 const cors = require("cors");
+require("dotenv").config();
 
 const methodOverride = require("method-override");
 const bodyParser = require("body-parser");
@@ -12,7 +13,7 @@ const port = 4000;
 
 // configuration ===============================================================
 mongoose.connect(
-    "mongodb+srv://januzo:iywFkAlTdPDZ5aKD@cluster0.s9vzf.mongodb.net/?retryWrites=true&w=majority",
+    process.env.MONGO_URI,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true

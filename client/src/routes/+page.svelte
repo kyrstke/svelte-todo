@@ -1,8 +1,10 @@
 <script lang="ts">
-    let title = "Svelte Todo";
+	import TodoList from "../components/TodoList.svelte";
 </script>
 
-<h1 class="text-3xl font-bold">{title}</h1>
-<button class="border border-stone-500">
-    click me
-</button>
+<div class="main-container mt-10 mx-auto max-w-lg">
+    <TodoList />
+</div>
+
+
+
